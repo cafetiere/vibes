@@ -1,4 +1,5 @@
 const rp = require('promise-request-retry');
+const jsdom = require('jsdom');
 
 const API_KEY = process.env.API_KEY
 const URL = 'http://quotes.toscrape.com/page/1/'

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/cafetiere/vibes#readme",
   "dependencies": {
+    "jsdom": "^20.0.3",
     "promise-request-retry": "^1.0.2"
   }
 }
