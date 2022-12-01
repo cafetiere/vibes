@@ -1,0 +1,20 @@
+{
+  "name": "vibes",
+  "version": "1.0.0",
+  "description": "a app to find places to vibe to as a team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafetiere/vibes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cafetiere/vibes/issues"
+  },
+  "homepage": "https://github.com/cafetiere/vibes#readme"
+}
