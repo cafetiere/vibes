@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cafetiere/vibes/issues"
   },
-  "homepage": "https://github.com/cafetiere/vibes#readme"
+  "homepage": "https://github.com/cafetiere/vibes#readme",
+  "dependencies": {
+    "promise-request-retry": "^1.0.2"
+  }
 }
