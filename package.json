@@ -20,10 +20,7 @@
   "dependencies": {
     "htmlparser2": "^8.0.1",
     "jsdom": "^20.0.3",
-<<<<<<< Updated upstream
     "lodash": "^4.17.21",
-=======
->>>>>>> Stashed changes
     "nightmare": "^3.0.2",
     "promise-request-retry": "^1.0.2"
   }
