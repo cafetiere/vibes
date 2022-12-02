@@ -1,23 +1,18 @@
-const rp = require('promise-request-retry');
-const htmlparser = require("htmlparser2");
 
-const API_KEY = process.env.API_KEY
-const URL = 'https://london.eater.com/maps'
+const Nightmare = require('nightmare')
+const nightmare = Nightmare({ show: true })
 
-options = {
-    uri: `http://api.scraperapi.com/`,
-    qs: {
-        'api_key': API_KEY,
-        'url': URL
-    },
-    resolveWithFullResponse: true
-}
-let dom
-rp(options)
-    .then(response => {
-        dom = htmlparser.parseDocument(response.body)
-        console.log(dom)
-    })
+nightmare
+    .goto('https://london.eater.com/maps/archives')
+    .wait('h2')
+    .evaluate(selector => {
+        console.log(Array.from(document.querySelectorAll(selector))
+            .map(element => element.href)
+            .filter((el) => {
+                return el && el != ''
+            }));}, 'h2')
+    .click('h2')
+    .then(console.log)
     .catch(error => {
-        console.log(error)
+        console.error('Scrape failed', error)
     })
