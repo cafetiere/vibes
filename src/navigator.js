@@ -10,6 +10,7 @@ function navigate_eater() {
         const url = `${base_url}/${pageNumber}`
         console.log(url)
         nightmare.goto(url)
+        //rest of code here 
     })
 }
 
